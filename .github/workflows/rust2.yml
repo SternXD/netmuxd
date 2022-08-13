@@ -17,9 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Clone
-      run: cd ../; git clone https://github.com/zeyugao/zeroconf-rs
+      run: cd ../; git clone https://github.com/zeyugao/zeroconf-rs cd ../netmuxd
     - name: Clone
-      run: cd../; git clone https://github.com/jkcoxson/mdns; cd ../netmuxd
+      run: cd ../; git clone https://github.com/jkcoxson/mdns; cd ../netmuxd
     - name: Build
       run: cargo build --verbose
     - name: Run tests
